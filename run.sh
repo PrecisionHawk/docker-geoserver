@@ -10,7 +10,7 @@ then
     mkdir -p $DATA_DIR
 fi 
 
-docker run --name="geoserver-postgis" -e USERNAME=postgis -e PASS=postgis -t -d precisionhawk/postgis
+docker run --name="geoserver-postgis" -t -d precisionhawk/postgis
 
 docker run \
 	--name=geoserver \
